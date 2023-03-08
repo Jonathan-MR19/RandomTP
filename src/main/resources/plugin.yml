@@ -2,3 +2,19 @@ name: RandomTp
 version: '${project.version}'
 main: pe.edu.utp.plugins.randomtp.PLUGIN
 api-version: 1.19
+authors:
+  - luis
+  - jonathan
+  - pierosa
+  - daulr
+description: "Este plugin te manda a sitios random."
+depend:
+  - CommandAPI
+commands:
+  hello:
+    permission: randomtp.commands.hello
+    permission-message: "No tienes permisos prro"
+    usage: "Este comando se usa asi mira: /hello world"
+    description: "Este comando saluda."
+    aliases:
+      - world
