@@ -1,0 +1,4 @@
+name: RandomTp
+version: '${project.version}'
+main: pe.edu.utp.plugins.randomtp.PLUGIN
+api-version: 1.19
