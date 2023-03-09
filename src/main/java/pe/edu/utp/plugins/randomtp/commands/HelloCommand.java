@@ -26,7 +26,7 @@ public class HelloCommand implements CommandExecutor {
                     String.format("El bloque es: %s", cyanBlock.getType())
             );
         } else {
-            sender.sendMessage("No eres un jugador");
+            sender.sendMessage("No eres un jugador prro.");
         }
 
         return true;
