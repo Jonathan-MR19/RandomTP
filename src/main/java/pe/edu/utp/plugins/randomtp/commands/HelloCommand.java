@@ -23,7 +23,7 @@ public class HelloCommand implements CommandExecutor {
             Block cyanBlock = floor.getBlock();
 
             jugador.sendMessage(
-                    String.format("El bloque donde estas parado es: %s", cyanBlock.getType())
+                    String.format("El bloque es: %s", cyanBlock.getType())
             );
         } else {
             sender.sendMessage("No eres un jugador");
