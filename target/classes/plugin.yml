@@ -1,9 +1,0 @@
-name: RandomTp
-version: '1.0-SNAPSHOT'
-main: pe.edu.utp.plugins.randomtp.PLUGIN
-api-version: 1.19
-authors:
-  - luis
-  - jonathan
-  - pierosa
-  - daulr
