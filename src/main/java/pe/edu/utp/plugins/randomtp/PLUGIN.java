@@ -8,7 +8,9 @@ public final class PLUGIN extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        this.getCommand("hello").setExecutor(new HelloCommand());
+        HelloCommand helloCommand = new HelloCommand();
+        this.getCommand("hello").setExecutor(helloCommand);
+        this.getCommand("hello").setTabCompleter(helloCommand);
     }
 
     @Override
