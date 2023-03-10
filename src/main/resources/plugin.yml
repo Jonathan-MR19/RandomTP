@@ -21,3 +21,7 @@ commands:
   luiscmd:
     permission: randomtp.commands.luiscmd
     description: "Este comando sirve para nada"
+
+  utp:
+    permission: randomtp.commands.utp
+    description: "no lo sé aún"
