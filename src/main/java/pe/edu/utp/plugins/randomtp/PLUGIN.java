@@ -2,6 +2,7 @@ package pe.edu.utp.plugins.randomtp;
 
 import org.bukkit.plugin.java.JavaPlugin;
 import pe.edu.utp.plugins.randomtp.commands.HelloCommand;
+import pe.edu.utp.plugins.randomtp.commands.LuisCommand;
 
 public final class PLUGIN extends JavaPlugin {
 
@@ -13,6 +14,7 @@ public final class PLUGIN extends JavaPlugin {
         HelloCommand helloCommand = new HelloCommand();
         this.getCommand("hello").setExecutor(helloCommand);
         this.getCommand("hello").setTabCompleter(helloCommand);
+        this.getCommand("luiscmd").setExecutor(new LuisCommand());
 
         System.out.println("Valor de pvp");
         System.out.println(getConfig().getBoolean("pvp"));
