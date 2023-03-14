@@ -6,7 +6,7 @@ import pe.edu.utp.plugins.randomtp.commands.IrwinCommand;
 import pe.edu.utp.plugins.randomtp.commands.LuisCommand;
 import pe.edu.utp.plugins.randomtp.commands.UtpCommand;
 
-public final class PLUGIN extends JavaPlugin {
+public final class RandomTp extends JavaPlugin {
 
     @Override
     public void onEnable() {
