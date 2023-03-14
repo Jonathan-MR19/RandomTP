@@ -8,8 +8,6 @@ authors:
   - pierosa
   - daulr
 description: "Este plugin te manda a sitios random."
-depend:
-  - CommandAPI
 commands:
   hello:
     permission: randomtp.commands.hello
