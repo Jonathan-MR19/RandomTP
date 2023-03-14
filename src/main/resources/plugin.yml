@@ -25,3 +25,6 @@ commands:
   utp:
     permission: randomtp.commands.utp
     description: "no lo sé aún"
+  irwin:
+    permission: randomtp.commands.utp
+    description: "En proceso"
