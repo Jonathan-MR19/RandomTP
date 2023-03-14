@@ -24,7 +24,7 @@ commands:
 
   utp:
     permission: randomtp.commands.utp
-    description: "no lo sé aún"
+    description: "teletransporta a otras dimensiones"
   irwin:
     permission: randomtp.commands.utp
     description: "En proceso"
