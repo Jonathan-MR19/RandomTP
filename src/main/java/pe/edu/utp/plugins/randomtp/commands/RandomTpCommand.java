@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class RandomTp implements CommandExecutor, TabCompleter {
+public class RandomTpCommand implements CommandExecutor, TabCompleter {
     // /rtp min max
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -38,7 +38,22 @@ public class RandomTp implements CommandExecutor, TabCompleter {
             jugador = (Player) sender;
         }
 
-        Location loc = getRandomBlockToSpawn(1, 2, "world");
+        int min = 0;
+        int max = 0;
+
+        try {
+            min = Integer.valueOf(args[0]);
+            max = Integer.valueOf(args[1]);
+        } catch (NumberFormatException e) {
+            sender.sendMessage("Minimo o maximo erroneo. Coloque solo numeros.");
+        }
+
+        Location loc = getRandomBlockToSpawn(min, max, jugador.getLocation());
+
+        jugador.teleport(loc.add(0.5, 1, 0.5));
+
+        sender.sendMessage("Se llevo al jugador a un lugar seguro.");
+        jugador.sendMessage("Estas siendo llevado a otro mundo.");
 
         return true;
     }
@@ -67,11 +82,14 @@ public class RandomTp implements CommandExecutor, TabCompleter {
         return isPositive ? randomNumber : -randomNumber;
     }
 
-    private Location getRandomBlockToSpawn(int min, int max, String world) {
+    private Location getRandomBlockToSpawn(int min, int max, Location center) {
         Location loc = null;
         
         while (loc == null) {
+            int x = getRandomCord(min, max);
+            int z = getRandomCord(min, max);
 
+            loc = center.getWorld().getHighestBlockAt(center.getBlockX() + x, center.getBlockZ() + z).getLocation();
         }
         
         return loc;
