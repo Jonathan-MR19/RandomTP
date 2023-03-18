@@ -2,9 +2,10 @@ Un plugin de minecraft para escoger un punto aleatorio del mundo en un anillo ce
 
 # Usar el plugin
 
-1. Instalar un servidor de Minecraft con SpigotMC o PaperMC
-2. Mover el archivo `RandomTp.jar` a la carpeta `plugins/` del servidor
-3. Iniciar servidor - [Tutorial de como crear un servidor local](https://youtu.be/ky8hkshwyVQ)
+1. Instalar un servidor de Minecraft con SpigotMC o PaperMC - [Tutorial de como crear un servidor local](https://youtu.be/ky8hkshwyVQ)
+2. Descargar el plugin - [Ultima version](https://github.com/Jonathan-MR19/RandomTP/releases)
+3. Mover el archivo `RandomTp.jar` a la carpeta `plugins/` del servidor
+4. Iniciar servidor
 
 # Comandos
 - /randomtp <min> <max> [player] - Permiso `randomtp.commands.randomtp`
